@@ -1,0 +1,172 @@
+
+:before,
+:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.dws-menu
+{
+    background-color: rgb(54, 52, 52);
+    width: 100%;
+    height: 50px;
+    background: url(https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg)
+}   
+ul.dws-ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+li.dws-li {
+    list-style: none;
+    padding: 10px;
+}
+li.dws-li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    position: relative;
+    padding: 5px;
+}
+li.dws-li a i {
+    margin-right: 10px;
+}
+li.dws-li a::before {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+li.dws-li a::after{
+    content: '';
+    width: 00px;
+    height: 3px;
+    background-color: rgb(4, 247, 247);
+    position: absolute;
+    top: 90%;
+    right: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+li.dws-li:hover a::before{
+    width: 50%;
+    transform: translateX(100%);
+}
+li.dws-li:hover a::after{
+    width: 50%;
+    transform: translateX(-100%);
+}
+li.dws-li a:hover {
+    color: darkcyan;
+}
+html,
+body {
+    height: 100%;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.fullscreen {
+    min-height: 100vh;
+    background-color: #666;
+    display: flex;
+    background: url(https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg);
+    /*padding: 20px 0;*/
+    
+}
+.fullscreen_two {
+    background-color: #77608d;
+    background: url(https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg);
+}
+.fullscreen_bg {
+    background: url(https://3.bp.blogspot.com/-CBkeyJkASJY/XFUltC8eOEI/AAAAAAAABz0/Dlf9jd3RMPQKSz_G63SgYDiC53NmYNdywCKgBGAs/w0/night-sky-stars-scenery-landscape-21-4K.jpg) center / cover fixed no-repeat;
+}
+.fullscreen__body {
+    flex: 1 1 auto;
+    max-width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fullscreen__title {
+    font-size: 50px;
+    margin: 0px 0px 0px 0px;
+}
+.fullscreen__text {
+    font-size: 25px;
+    margin: 0px 0px 20px 0px;
+}
+.content {
+    border: none;
+}
+.content__body {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 30px 20px;
+}
+.content__body p {
+    margin: 0px 0px 20px 0px ;
+}
+.content__body P:last-child {
+    margin: 0;
+}
+.footer {
+    background-color: black;
+    text-align: center;
+}
+.footer__body {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 30px 20px;
+}
+.textarea {
+    height: 40px;
+    width: 300px;
+}
+.button {
+    background: #666;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;  
+}
+.button:hover {
+    opacity: 0.8;
+}
+.footer_phone {
+    text-decoration: underline;
+    background-color: #666;
+    width: 100%;
+    background: transparent;
+    
+}
+.footer_email {
+    text-decoration: underline;
+    color: #fff;
+}
+.footer_back {
+    color: grey;
+    text-decoration: underline;
+}
+.house-icon {
+    color: grey;
+}
+
+
+
+
